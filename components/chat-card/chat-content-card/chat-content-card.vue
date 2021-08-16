@@ -38,7 +38,16 @@
 		},
 		methods:{
 			contentClick(id){
-				console.log(id)
+				uni.navigateTo({
+					url:'/pages/message/index',
+					 success: function(res) {
+					    // 通过eventChannel向被打开页面传送数据
+					    res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+					},
+					fail(res) {
+						console.log(res)
+					}
+				})
 			}
 		}
 	}

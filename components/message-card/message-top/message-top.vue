@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="message-top">
-			<view class="return-card">
+			<view @click="return_button" class="return-card">
 				<image class="return-image" src="../../../static/return-white.png"></image>
 			</view>
 			<view class="title-card">
@@ -26,7 +26,9 @@
 		components: {
 		},
 		methods:{
-			
+			return_button(){
+				uni.navigateBack()
+			}
 		}
 	}
 </script>

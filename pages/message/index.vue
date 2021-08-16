@@ -4,11 +4,11 @@
 		<message-top :userName="userName"></message-top>
 		<communication :messages="messages"></communication>
 		<view class="send_card">
-			<view class="">
-				
+			<view class="send_input">
+				<input class="send_input_item" />
 			</view>
-			<view class="">
-				
+			<view class="send_button">
+				<button class="send_button_item"> 发送 </button>
 			</view>
 		</view>
 	</view>
@@ -117,10 +117,33 @@
 
 <style>
 	.send_card{
-		background-color: #000;
 		display: flex;
 		flex-direction:"column";
 		flex-wrap: nowrap;
 		justify-content:flex-start;
+	}
+	.send_input{
+		order: 0;
+		width: 80%;
+	}
+	.send_input_item{
+		margin-top: 15rpx;
+		margin-left: 50rpx;
+		background-color: #fff;
+		height: 60rpx;
+		width: 500rpx;
+		border-radius: 50rpx;
+		border: #FB7575 solid 1rpx;
+	}
+	.send_button{
+		order: 1;
+		width: 15%;
+	}
+	.send_button_item{
+		margin-top: 15rpx;
+		font-size: 25rpx;
+		color: #fff;
+		background-color: #FB7575;
+		width: 100rpx;
 	}
 </style>

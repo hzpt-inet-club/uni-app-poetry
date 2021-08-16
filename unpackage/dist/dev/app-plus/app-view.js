@@ -5782,8 +5782,29 @@ var render = function() {
         "v-uni-view",
         { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
         [
-          _c("v-uni-view", { attrs: { _i: 5 } }),
-          _c("v-uni-view", { attrs: { _i: 6 } })
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+            [
+              _c("v-uni-input", {
+                staticClass: _vm._$g(6, "sc"),
+                attrs: { _i: 6 }
+              })
+            ],
+            1
+          ),
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
+            [
+              _c(
+                "v-uni-button",
+                { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+                [_vm._v("发送")]
+              )
+            ],
+            1
+          )
         ],
         1
       )
@@ -5929,7 +5950,15 @@ var render = function() {
         [
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+            {
+              staticClass: _vm._$g(2, "sc"),
+              attrs: { _i: 2 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
             [
               _c("v-uni-image", {
                 staticClass: _vm._$g(3, "sc"),
@@ -6435,7 +6464,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 13);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.send_card{\n\tbackground-color: #000;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient:vertical;\n\t-webkit-box-direction:normal;\n\t-webkit-flex-direction:\"column\";\n\t        flex-direction:\"column\";\n\t-webkit-flex-wrap: nowrap;\n\t        flex-wrap: nowrap;\n\t-webkit-box-pack:start;\n\t-webkit-justify-content:flex-start;\n\t        justify-content:flex-start;\n}\n", ""]);
+exports.push([module.i, "\n.send_card{\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-orient:vertical;\n\t-webkit-box-direction:normal;\n\t-webkit-flex-direction:\"column\";\n\t        flex-direction:\"column\";\n\t-webkit-flex-wrap: nowrap;\n\t        flex-wrap: nowrap;\n\t-webkit-box-pack:start;\n\t-webkit-justify-content:flex-start;\n\t        justify-content:flex-start;\n}\n.send_input{\n\t-webkit-box-ordinal-group: 1;\n\t-webkit-order: 0;\n\t        order: 0;\n\twidth: 80%;\n}\n.send_input_item{\n\tmargin-top: 15rpx;\n\tmargin-left: 50rpx;\n\tbackground-color: #fff;\n\theight: 60rpx;\n\twidth: 500rpx;\n\tborder-radius: 50rpx;\n\tborder: #FB7575 solid 1rpx;\n}\n.send_button{\n\t-webkit-box-ordinal-group: 2;\n\t-webkit-order: 1;\n\t        order: 1;\n\twidth: 15%;\n}\n.send_button_item{\n\tmargin-top: 15rpx;\n\tfont-size: 25rpx;\n\tcolor: #fff;\n\tbackground-color: #FB7575;\n\twidth: 100rpx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
