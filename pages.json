@@ -1,13 +1,28 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index"
+			"path": "pages/index/index",
+			"style" : {  
+				"navigationStyle":"custom"  
+			}  
 		},
 		{
 			"path":"pages/video/index"
 		},
 		{
-			"path":"pages/chat/index"
+			"path":"pages/chat/index",
+			"style":{
+				"navigationBarBackgroundColor":"#FB7575",
+				"navigationBarTitleText":"消息",
+				"navigationBarTextStyle":"black",
+				"titleNView":{
+				    "buttons":[
+					  {
+							"type":"menu"
+					  }
+				    ]
+				}
+			}
 		},
 		{
 			"path":"pages/push/index"
@@ -16,11 +31,32 @@
 			"path":"pages/myself/index"
 		},
 		{
-			"path":"pages/message/index"
+			"path":"pages/message/index",
+			"style":{
+				"navigationBarBackgroundColor":"#FB7575",
+				"navigationBarTitleText":"",
+				"navigationBarTextStyle":"white",
+				"titleNView":{
+				    "buttons":[
+						{
+						  "type":"menu"
+						}
+				    ]
+				}
+			}
+		},
+		{
+			"path":"pages/myself/register/index",
+			"style" : {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"background":"#000000"
+				}
+			}  
 		}
 	],
 	"globalStyle": {
-		"navigationStyle":"custom",
+		"navigationStyle":"default",
 		"app-plus": {
 			"pullToRefresh":true,
 			"titleView":false

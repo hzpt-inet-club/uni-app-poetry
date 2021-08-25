@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<!-- 状态栏 -->
-		<status-bar></status-bar>
+		<!-- <status-bar></status-bar> -->
 		<!-- 信息栏 -->
-		<info-top-bar></info-top-bar>
+		<!-- <info-top-bar></info-top-bar> -->
 		<view class="tab-control">
 			<liuyuno-tabs :tabData="items" @tabClick='tabClick'/>
 			<chat-content-card :users="users"></chat-content-card>

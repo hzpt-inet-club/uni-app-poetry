@@ -24,6 +24,5 @@
 	    width: 100%;
 		/* 定义颜色 */
 		/* background-color: #FB7575; */
-		
 	}
 </style>
