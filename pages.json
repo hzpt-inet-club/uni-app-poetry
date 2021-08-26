@@ -53,6 +53,15 @@
 					"background":"#000000"
 				}
 			}  
+		},
+		{
+			"path":"pages/myself/signIn/index",
+			"style" : {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"background":"#000000"
+				}
+			}  
 		}
 	],
 	"globalStyle": {
