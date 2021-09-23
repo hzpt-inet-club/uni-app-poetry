@@ -16,8 +16,9 @@
 				></uni-search-bar>
 			</view>
 			<!-- 功能区 -->
-			<view class="functional_area">
-				<image class="functional_image" src="../../../static/function.png"></image>
+			<view class="functional_area"  @click="toRecommended()">
+				<image v-show="!recommendedPages" class="functional_image" src="../../../static/function.png"></image>
+				<image v-show="recommendedPages" class="functional_image" src="../../../static/function_1.png"></image>
 			</view>
 		</view>
 </template>
@@ -34,13 +35,25 @@
 			searchValue:{
 				type:String,
 				default:""
+			},
+			change:{
+				type:Boolean,
+				default:false
 			}
 		},
 		components: {
 			cmdAvatar,
 		},
+		data(){
+			return{
+				recommendedPages:this.change
+			}
+		},
 		methods:{
-			
+			toRecommended(){
+				this.recommendedPages = !this.recommendedPages
+				this.$emit('change',this.recommendedPages)
+			}
 		}
 	}
 </script>

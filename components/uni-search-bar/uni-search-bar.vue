@@ -3,7 +3,7 @@
 		<view :style="{borderRadius:radius+'px',backgroundColor: bgColor}" class="uni-searchbar__box" @click="searchClick">
 			<view class="uni-searchbar__box-icon-search">
 				<slot name="searchIcon">
-					<uni-icons color="#ffffff" size="18" type="search" />
+					<uni-icons color="#a6a4a4" size="18" type="search" />
 				</slot>
 			</view>
 			<input v-if="show || searchVal" :focus="showSync" :placeholder="placeholder" :maxlength="maxlength" class="uni-searchbar__box-search-input" confirm-type="search" type="text" v-model="searchVal" @confirm="confirm" @blur="blur" @focus="emitFocus" />
@@ -188,7 +188,7 @@
 			},
 			emitFocus(e) {
 				this.$emit("focus", e.detail)
-			}
+			},
 		}
 	};
 </script>
