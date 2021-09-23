@@ -1,13 +1,6 @@
 <script>
 	export default {
-		onLaunch: function() {
-			uni.onTabBarMidButtonTap(() => {
-				uni.navigateTo({
-					url: "/pages/push/index",
-					animationDuration: 150
-				})		
-			})
-		},
+		
 		onShow: function() {
 			console.log('App Show')
 		},
@@ -15,6 +8,8 @@
 			console.log('App Hide')
 		}
 	}
+
+	
 </script>
 
 <style>
