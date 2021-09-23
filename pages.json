@@ -6,18 +6,17 @@
 				"navigationStyle":"custom"  
 			}  
 		},
-		{
-			"path":"pages/video/index"
-		},
+		
 		{
 			"path":"pages/chat/index",
 			"style":{
-				"navigationBarBackgroundColor":"#FB7575",
+				"navigationBarBackgroundColor":"#bc1a32",
 				"navigationBarTitleText":"消息",
 				"navigationBarTextStyle":"black",
 				"titleNView":{
 				    "buttons":[
 					  {
+						  
 							"type":"menu"
 					  }
 				    ]
@@ -25,15 +24,28 @@
 			}
 		},
 		{
-			"path":"pages/push/index"
-		},
-		{
-			"path":"pages/myself/index"
+			"path":"pages/myself/index",
+			"style":{
+			  "navigationBarTitleText":"我的",
+			  "navigationBarBackgroundColor":"#bc1a32",
+			  "navigationBarTextStyle":"white",
+			  "app-plus":{
+			    "titleNView":{
+			      "buttons":[
+			        {
+			          "text":"\ue63f",
+			          "fontSrc":"/static/icon.ttf",
+			          "fontSize":"22px"
+			        }
+			      ]
+			    }
+			  }
+			}
 		},
 		{
 			"path":"pages/message/index",
 			"style":{
-				"navigationBarBackgroundColor":"#FB7575",
+				"navigationBarBackgroundColor":"#bc1a32",
 				"navigationBarTitleText":"",
 				"navigationBarTextStyle":"white",
 				"titleNView":{
@@ -45,25 +57,181 @@
 				}
 			}
 		},
+		
 		{
-			"path":"pages/myself/register/index",
-			"style" : {
-				"navigationStyle":"custom",
-				"app-plus":{
-					"background":"#000000"
-				}
-			}  
-		},
-		{
-			"path":"pages/myself/signIn/index",
-			"style" : {
-				"navigationStyle":"custom",
-				"app-plus":{
-					"background":"#000000"
-				}
-			}  
-		}
-	],
+            "path" : "pages/history/index",
+            "style":{
+              "navigationBarTitleText":"党史百科",
+              "navigationBarBackgroundColor":"#bc1a32",
+              "navigationBarTextStyle":"white"
+            }
+        }
+        ,{
+            "path" : "pages/articleshow/index",
+           "style":{
+             "navigationBarTitleText":"展示",
+             "navigationBarBackgroundColor":"#bc1a32",
+             "navigationBarTextStyle":"white"
+           }
+            
+        }
+        ,{
+            "path" : "pages/video/index",
+            "style":{
+              "navigationBarTitleText":"百年征程",
+              "navigationBarBackgroundColor":"#bc1a32",
+              "navigationBarTextStyle":"white"
+            }
+        }
+        ,{
+            "path" : "pages/mapshow/index",
+          "style":{
+            "navigationBarTitleText":"红色足迹",
+            "navigationBarBackgroundColor":"#bc1a32",
+            "navigationBarTextStyle":"white"
+          }
+        }
+        ,{
+            "path" : "pages/maparticle/index",
+           "style":{
+                         "navigationBarTitleText":"",
+                         "navigationBarBackgroundColor":"#bc1a32",
+                         "navigationBarTextStyle":"white"
+                       }
+        }
+        ,{
+            "path" : "pages/rostrum/index",
+           "style":{
+                            "navigationBarTitleText":"浙江讲坛",
+                            "navigationBarBackgroundColor":"#bc1a32",
+                            "navigationBarTextStyle":"white"
+                          }
+           }
+        
+        ,{
+            "path" : "pages/vidershow/index",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/historyimage/index",
+           "style":{
+             "navigationBarTitleText":"峥嵘岁月",
+             "navigationBarBackgroundColor":"#bc1a32",
+             "navigationBarTextStyle":"white"
+           }
+            
+        }
+        ,{
+            "path" : "pages/heros/index",
+            "style":{
+              "navigationBarTitleText":"英雄人物",
+              "navigationBarBackgroundColor":"#bc1a32",
+              "navigationBarTextStyle":"white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/heroshow/index",
+          "style":{
+            "navigationBarTitleText":"",
+            "navigationBarBackgroundColor":"#bc1a32",
+            "navigationBarTextStyle":"white"
+          }
+            
+        }
+        ,{
+            "path" : "pages/rostrunshow/index",
+           "style":{
+             "navigationBarTitleText":"",
+             "navigationBarBackgroundColor":"#bc1a32",
+             "navigationBarTextStyle":"white"
+           }
+            
+        }
+        ,{
+            "path" : "pages/imgshow/index",
+			"style":{
+             "navigationBarTitleText":"",
+             "navigationBarBackgroundColor":"#bc1a32",
+             "navigationBarTextStyle":"white"
+           }
+        }
+        ,{
+            "path" : "pages/login/login",
+           "style" : {
+           	"navigationStyle":"custom"  
+           }  
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+           "style" : {
+           	"navigationStyle":"custom"  
+           }  
+            
+        }
+        ,{
+            "path" : "pages/change_password/change_password",
+           "style" : {
+           	"navigationStyle":"custom"  
+           }  
+            
+        }
+        ,{
+            "path" : "pages/chnagesuccess/chnagesuccess",
+            "style" : {
+            	"navigationStyle":"custom"  
+            }  
+            
+        }
+        ,{
+            "path" : "pages/movies/movies",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/button/button",
+           "style":{
+             "navigationBarTitleText":"小浙",
+             "navigationBarBackgroundColor":"#bc1a32",
+             "navigationBarTextStyle":"white"
+           }
+            
+        }
+        ,{
+            "path" : "pages/guide/guide",
+           "style": {
+           	"enablePullDownRefresh": false,
+           	"onReachBottomDistance": 100,
+           	"navigationStyle": "custom",
+           	"app-plus": {
+           		"contentAdjust": false,
+           		"bounce": "none"
+           	}
+           }
+            
+        }
+        ,{
+            "path" : "pages/guide/judge",
+           "style": {
+           	"enablePullDownRefresh": false,
+           	"onReachBottomDistance": 100,
+           	"navigationStyle": "custom",
+           	"app-plus": {
+           		"contentAdjust": false,
+           		"bounce": "none"
+           	}
+           }
+        }
+    ],
 	"globalStyle": {
 		"navigationStyle":"default",
 		"app-plus": {
@@ -80,32 +248,28 @@
 				"selectedIconPath":"static/select_home.png"
 			},
 			{
-				"pagePath":"pages/video/index",
+				"pagePath":"pages/historyimage/index",
 				"iconPath":"static/default_find.png",
 				"selectedIconPath":"static/select_find.png"
 			},
 			{
-				"pagePath":"pages/chat/index",
-				"iconPath":"static/default_chat.png",
-				"selectedIconPath":"static/select_chat.png"
+				"pagePath":"pages/video/index",
+				"iconPath":"static/video2.png",
+				"selectedIconPath":"static/video%20(2).png"
 			},
 			{
 				"pagePath":"pages/myself/index",
 				"iconPath":"static/default_myself.png",
 				"selectedIconPath":"static/select_myself.png"
-			}
-		],
-		"midButton":{
-			"iconPath":"static/default_push.png",
-			"iconWidth":"64px"
-		}
+			}	
+		]
 	},
 	"condition" : { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [
 			{
 				"name": "info", //模式名称
-				"path": "pages/chat/index", //启动页面，必选
+				"path": "pages/guide/judge", //启动页面，必选
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
 		]
